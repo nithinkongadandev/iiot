@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "definition": "https://github.com/nithinkongadandev/iiot/edit/main/genjsonld.jsonld"
   "type": "object",
   "properties": {
     "attributes": {
