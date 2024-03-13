@@ -13,9 +13,9 @@
     "tm:optional": [],
     "properties": {     
         "documentInfo": {
-            "_copyright": "Copyright 2021, Roemheld GmbH",
-            "_releaseDate": "2024-02-15",
-            "_version": "V1.0"
+            "copyright": "Copyright 2021, Roemheld GmbH",
+            "releaseDate": "2024-02-15",
+            "version": "V1.0"
         },
         "profileHeader": {
             "profileIdentification": "IO Device Profile",
@@ -23,10 +23,10 @@
             "profileName": "Device Profile for IO Devices",
             "profileSource": "IO-Link Consortium",
             "profileClassID": "Device",
-            "ISO15745Reference": {
-                "ISO15745Part": "1",
-                "ISO15745Edition": "1",
-                "ProfileTechnology": "IODD"
+            "iso15745Reference": {
+                "iso15745Part": "1",
+                "iso15745Edition": "1",
+                "profileTechnology": "IODD"
             }
         }
     }
