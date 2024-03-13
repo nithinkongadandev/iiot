@@ -5,8 +5,8 @@
             "time": "http://www.w3.org/2006/time#"
         }
     ],
-    "@type": "tm:ThingModelIODDRomheld",
-    "title": "Romeheld",
+    "@type": "tm:ThingModel",
+    "title": "Switchable",
     "version": {
         "model": "1.0.0"
     },
