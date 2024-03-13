@@ -13,21 +13,21 @@
     "tm:optional": [],
     "properties": {     
         "documentInfo": {
+            "type": "object"
+        "properties": {     
             "copyright": "Copyright 2021, Roemheld GmbH",
             "releaseDate": "2024-02-15",
             "version": "V1.0"
+          } 
         },
         "profileHeader": {
+            "type": "object",
             "profileIdentification": "IO Device Profile",
             "profileRevision": "1.1",
             "profileName": "Device Profile for IO Devices",
             "profileSource": "IO-Link Consortium",
-            "profileClassID": "Device",
-            "iso15745Reference": {
-                "iso15745Part": "1",
-                "iso15745Edition": "1",
-                "profileTechnology": "IODD"
-            }
+            "profileClassID": "Device"
+          
         }
     }
 }
