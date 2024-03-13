@@ -21,12 +21,14 @@
           } 
         },
         "profileHeader": {
-            "type": "object",
+            "type": "object"
+             "properties": {  
             "profileIdentification": "IO Device Profile",
             "profileRevision": "1.1",
             "profileName": "Device Profile for IO Devices",
             "profileSource": "IO-Link Consortium",
             "profileClassID": "Device"
+        }
           
         }
     }
