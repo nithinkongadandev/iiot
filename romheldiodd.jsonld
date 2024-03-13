@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "time": "http://www.w3.org/2006/time#"
+        }
+    ],
+    "@type": "tm:IODeviceThingModel",
+    "title": "Roemheld GmbH",
+    "version": {
+        "model": "1.0.0"
+    },
+    "tm:optional": [],
+    "attributes": {
+        "documentInfo": {
+            "_copyright": "Copyright 2021, Roemheld GmbH",
+            "_releaseDate": "2024-02-15",
+            "_version": "V1.0"
+        },
+        "profileHeader": {
+            "profileIdentification": "IO Device Profile",
+            "profileRevision": "1.1",
+            "profileName": "Device Profile for IO Devices",
+            "profileSource": "IO-Link Consortium",
+            "profileClassID": "Device",
+            "ISO15745Reference": {
+                "ISO15745Part": "1",
+                "ISO15745Edition": "1",
+                "ProfileTechnology": "IODD"
+            }
+        }
+    }
+}
