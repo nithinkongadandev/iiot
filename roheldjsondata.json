@@ -1,0 +1,85 @@
+{
+    "thingId": "com.belden:IODevice.DeviceName",
+    "policyId": "com.belden:IODevice.DeviceName",
+    "definition": "org.eclipse.ditto:DeviceName:1.1.0",
+    "attributes": {
+      "documentInfo": {
+        "_copyright": "Copyright 2021, Roemheld GmbH",
+        "_releaseDate": "2024-02-15",
+        "_version": "V1.0"
+      },
+      "profileHeader": {
+        "profileIdentification": "IO Device Profile",
+        "profileRevision": "1.1",
+        "profileName": "Device Profile for IO Devices",
+        "profileSource": "IO-Link Consortium",
+        "profileClassID": "Device",
+        "ISO15745Reference": {
+          "ISO15745Part": "1",
+          "ISO15745Edition": "1",
+          "ProfileTechnology": "IODD"
+        }
+      }
+    },
+    "features": {
+      "profileBody": {
+        "properties": {
+          "DeviceIdentity": {
+            "VendorText": {
+              "_textId": "T_VendorText"
+            },
+            "VendorUrl": {
+              "_textId": "T_VendorUrl"
+            },
+            "VendorLogo": {
+              "_name": "Roemheld-logo.png"
+            },
+            "DeviceName": {
+              "_textId": "T_DeviceName"
+            },
+            "DeviceFamily": {
+              "_textId": "T_DeviceFamily"
+            }
+          }
+        }
+      },
+      "deviceFunction": {
+        "properties": {
+          "Features": {
+            "SupportedAccessLocks": {
+              "_dataStorage": "true",
+              "_localParameterization": "false",
+              "_localUserInterface": "false",
+              "_parameter": "true"
+            },
+            "_blockParameter": "true",
+            "_dataStorage": "true",
+            "_profileCharacteristic": "1 32768 32770 32771"
+          }
+        }
+      },
+      "datatypeCollection": {
+        "properties": {
+          "Datatype": {
+            "SingleValue": [
+              {
+                "Name": {
+                  "_textId": "TN_No",
+                  "properties": {}
+                },
+                "_value": "false"
+              },
+              {
+                "Name": {
+                  "_textId": "TN_Yes"
+                },
+                "_value": "true"
+              }
+            ],
+            "_xsi:type": "BooleanT",
+            "_id": "DT_YesNo"
+          }
+        }
+      }
+    }
+  }
