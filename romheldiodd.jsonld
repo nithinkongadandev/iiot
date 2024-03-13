@@ -11,7 +11,7 @@
         "model": "1.0.0"
     },
     "tm:optional": [],
-    "attributes": {
+    "properties": {     
         "documentInfo": {
             "_copyright": "Copyright 2021, Roemheld GmbH",
             "_releaseDate": "2024-02-15",
