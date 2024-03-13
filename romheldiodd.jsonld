@@ -5,7 +5,7 @@
             "time": "http://www.w3.org/2006/time#"
         }
     ],
-    "@type": "tm:IODeviceThingModel",
+    "@type": "tm:ThingModel",
     "title": "Roemheld GmbH",
     "version": {
         "model": "1.0.0"
