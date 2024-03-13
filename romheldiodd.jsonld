@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://www.w3.org/2019/wot/json-schema#",
+        "https://www.w3.org/2022/wot/td/v1.1",
         {
             "time": "http://www.w3.org/2006/time#"
         }
@@ -13,7 +13,7 @@
     "tm:optional": [],
     "properties": {     
         "documentInfo": {
-            "type": "object"
+            "type": "object",
         "properties": {     
             "copyright": "Copyright 2021, Roemheld GmbH",
             "releaseDate": "2024-02-15",
@@ -21,7 +21,7 @@
           } 
         },
         "profileHeader": {
-            "type": "object"
+            "type": "object",
              "properties": {  
             "profileIdentification": "IO Device Profile",
             "profileRevision": "1.1",
