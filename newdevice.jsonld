@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "IODevice": {
+      "type": "object",
+      "properties": {
+        "DeviceDoc": {
+          "type": "object",
+          "properties": {
+            "_copyright": {
+              "type": "string"
+            },
+            "_releaseDate": {
+              "type": "string"
+            },
+            "_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "_copyright",
+            "_releaseDate",
+            "_version"
+          ]
+        },
+        "DeviceDetails": {
+          "type": "object",
+          "properties": {
+            "ProfileIdentification": {
+              "type": "string"
+            },
+            "ProfileRevision": {
+              "type": "string"
+            },
+            "ProfileName": {
+              "type": "string"
+            },
+            "ProfileSource": {
+              "type": "string"
+            },
+            "ProfileClassID": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ProfileIdentification",
+            "ProfileRevision",
+            "ProfileName",
+            "ProfileSource",
+            "ProfileClassID"
+          ]
+        }
+      },
+      "required": [
+        "DeviceDoc",
+        "DeviceDetails"
+      ]
+    }
+  },
+  "required": [
+    "IODevice"
+  ]
+}
