@@ -1,0 +1,232 @@
+{
+      "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "time": "http://www.w3.org/2006/time#"
+        }
+    ],
+    "@type": "tm:ThingModel",
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "IODevice": {
+      "type": "object",
+      "properties": {
+        "DocumentInfo": {
+          "type": "object",
+          "properties": {
+            "_copyright": {
+              "type": "string"
+            },
+            "_releaseDate": {
+              "type": "string"
+            },
+            "_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "_copyright",
+            "_releaseDate",
+            "_version"
+          ]
+        },
+        "ProfileHeader": {
+          "type": "object",
+          "properties": {
+            "ProfileIdentification": {
+              "type": "string"
+            },
+            "ProfileRevision": {
+              "type": "string"
+            },
+            "ProfileName": {
+              "type": "string"
+            },
+            "ProfileSource": {
+              "type": "string"
+            },
+            "ProfileClassID": {
+              "type": "string"
+            },
+            "ISO15745Reference": {
+              "type": "object",
+              "properties": {
+                "ISO15745Part": {
+                  "type": "string"
+                },
+                "ISO15745Edition": {
+                  "type": "string"
+                },
+                "ProfileTechnology": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ISO15745Part",
+                "ISO15745Edition",
+                "ProfileTechnology"
+              ]
+            }
+          },
+          "required": [
+            "ProfileIdentification",
+            "ProfileRevision",
+            "ProfileName",
+            "ProfileSource",
+            "ProfileClassID",
+            "ISO15745Reference"
+          ]
+        },
+        "ProfileBody": {
+          "type": "object",
+          "properties": {
+            "DeviceIdentity": {
+              "type": "object",
+              "properties": {
+                "VendorText": {
+                  "type": "object",
+                  "properties": {
+                    "_textId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "_textId"
+                  ]
+                },
+                "VendorUrl": {
+                  "type": "object",
+                  "properties": {
+                    "_textId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "_textId"
+                  ]
+                },
+                "VendorLogo": {
+                  "type": "object",
+                  "properties": {
+                    "_name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "_name"
+                  ]
+                },
+                "DeviceName": {
+                  "type": "object",
+                  "properties": {
+                    "_textId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "_textId"
+                  ]
+                },
+                "DeviceFamily": {
+                  "type": "object",
+                  "properties": {
+                    "_textId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "_textId"
+                  ]
+                },
+                "DeviceVariantCollection": {
+                  "type": "object",
+                  "properties": {
+                    "DeviceVariant": {
+                      "type": "object",
+                      "properties": {
+                        "Name": {
+                          "type": "object",
+                          "properties": {
+                            "_textId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "_textId"
+                          ]
+                        },
+                        "Description": {
+                          "type": "object",
+                          "properties": {
+                            "_textId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "_textId"
+                          ]
+                        },
+                        "_deviceIcon": {
+                          "type": "string"
+                        },
+                        "_deviceSymbol": {
+                          "type": "string"
+                        },
+                        "_productId": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "Name",
+                        "Description",
+                        "_deviceIcon",
+                        "_deviceSymbol",
+                        "_productId"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "DeviceVariant"
+                  ]
+                },
+                "_deviceId": {
+                  "type": "string"
+                },
+                "_vendorId": {
+                  "type": "string"
+                },
+                "_vendorName": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "VendorText",
+                "VendorUrl",
+                "VendorLogo",
+                "DeviceName",
+                "DeviceFamily",
+                "DeviceVariantCollection",
+                "_deviceId",
+                "_vendorId",
+                "_vendorName"
+              ]
+            }
+          },
+          "required": [
+            "DeviceIdentity"
+          ]
+        }
+      },
+      "required": [
+        "DocumentInfo",
+        "ProfileHeader",
+        "ProfileBody"
+      ]
+    }
+  },
+  "required": [
+    "IODevice"
+  ]
+}
