@@ -48,10 +48,8 @@
                         },
                         "profileClassID": {
                             "data": {
-                                "@type": "om2:Power",
                                 "title": "Consumption in kW. minimim 5",
                                 "type": "number",
-                                "unit": "om2:kilowatt",
                                 "minimum": 5
                                 }
                          
