@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "documentInfo": {
+          "type": "object",
+          "properties": {
+            "_copyright": {
+              "type": "string"
+            },
+            "_releaseDate": {
+              "type": "string"
+            },
+            "_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "_copyright",
+            "_releaseDate",
+            "_version"
+          ]
+        },
+        "profileHeader": {
+          "type": "object",
+          "properties": {
+            "profileIdentification": {
+              "type": "string"
+            },
+            "profileRevision": {
+              "type": "string"
+            },
+            "profileName": {
+              "type": "string"
+            },
+            "profileSource": {
+              "type": "string"
+            },
+            "profileClassID": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "profileIdentification",
+            "profileRevision",
+            "profileName",
+            "profileSource",
+            "profileClassID"
+          ]
+        },
+        "features": {
+          "type": "object",
+          "properties": {
+            "devicePacking": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "size",
+                "weight"
+              ]
+            }
+          },
+          "required": [
+            "devicePacking"
+          ]
+        }
+      },
+      "required": [
+        "documentInfo",
+        "profileHeader",
+        "features"
+      ]
+    }
+  },
+  "required": [
+    "attributes"
+  ]
+}
