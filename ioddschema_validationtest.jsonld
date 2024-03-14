@@ -1,4 +1,4 @@
- {
+{
     "@context": [
         "https://www.w3.org/2022/wot/td/v1.1",
         {
@@ -47,9 +47,7 @@
                             "type": "string"
                         },
                         "profileClassID": {
-                                  “type”: “integer”,
-                                  “minimum”: 5,
-                                  “maximum”: 100
+                            "type": "string"
                         }
                     },
                     "required": [
