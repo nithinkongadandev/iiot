@@ -47,12 +47,8 @@
                             "type": "string"
                         },
                         "profileClassID": {
-                            "data": {
-                                "title": "Consumption in kW. minimim 5",
                                 "type": "number",
                                 "minimum": 5
-                                }
-                         
                         }
                     },
                     "required": [
