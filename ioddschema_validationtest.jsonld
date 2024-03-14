@@ -47,7 +47,9 @@
                             "type": "string"
                         },
                         "profileClassID": {
-                            "type": "integer"
+                            "type": "integer",
+                            "minLength": 5,
+                             "errorMessage": "The string '{0}' is less than the minimum length of {1}"
                         }
                     },
                     "required": [
