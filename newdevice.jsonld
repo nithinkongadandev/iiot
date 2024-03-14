@@ -2,10 +2,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "IODevice": {
+    "Mydevice": {
       "type": "object",
       "properties": {
-        "DeviceDoc": {
+        "MyDeviceDoc": {
           "type": "object",
           "properties": {
             "_copyright": {
@@ -24,41 +24,29 @@
             "_version"
           ]
         },
-        "DeviceDetails": {
+        "MyDeviceDetails": {
           "type": "object",
           "properties": {
-            "ProfileIdentification": {
+            "MyProfileIdentification": {
               "type": "string"
             },
-            "ProfileRevision": {
-              "type": "string"
-            },
-            "ProfileName": {
-              "type": "string"
-            },
-            "ProfileSource": {
-              "type": "string"
-            },
-            "ProfileClassID": {
+            "MyProfileRevision": {
               "type": "string"
             }
           },
           "required": [
-            "ProfileIdentification",
-            "ProfileRevision",
-            "ProfileName",
-            "ProfileSource",
-            "ProfileClassID"
+            "MyProfileIdentification",
+            "MyProfileRevision"
           ]
         }
       },
       "required": [
-        "DeviceDoc",
-        "DeviceDetails"
+        "MyDeviceDoc",
+        "MyDeviceDetails"
       ]
     }
   },
   "required": [
-    "IODevice"
+    "Mydevice"
   ]
 }
