@@ -1,4 +1,5 @@
- "@context": [
+ {
+    "@context": [
         "https://www.w3.org/2022/wot/td/v1.1",
         {
             "time": "http://www.w3.org/2006/time#"
@@ -21,10 +22,7 @@
                             "type": "string"
                         },
                         "_version": {
-                          "type": "string",
-                           "minLength": 3,
-                           "maxLength": 5
-
+                            "type": "string"
                         }
                     },
                     "required": [
@@ -49,7 +47,14 @@
                             "type": "string"
                         },
                         "profileClassID": {
-                            "type": "string"
+                            "data": {
+                                "@type": "om2:Power",
+                                "title": "Consumption in kW. minimim 5",
+                                "type": "number",
+                                "unit": "om2:kilowatt",
+                                "minimum": 5
+                                }
+                         
                         }
                     },
                     "required": [
