@@ -47,7 +47,7 @@
                             "type": "string"
                         },
                         "profileClassID": {
-                            "type": "string"
+                            "type": "integer"
                         }
                     },
                     "required": [
