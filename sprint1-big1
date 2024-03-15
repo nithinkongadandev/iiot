@@ -1,0 +1,99 @@
+{
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "time": "http://www.w3.org/2006/time#"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "attributes": {
+            "type": "object",
+            "properties": {
+                "IODevice": {
+                    "type": "object",
+                    "properties": {
+                        "DocumentInfo": {
+                            "type": "object",
+                            "properties": {
+                                "_copyright": {
+                                    "type": "string"
+                                },
+                                "_releaseDate": {
+                                    "type": "string"
+                                },
+                                "_version": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "_copyright",
+                                "_releaseDate",
+                                "_version"
+                            ]
+                        },
+                        "ProfileHeader": {
+                            "type": "object",
+                            "properties": {
+                                "ProfileIdentification": {
+                                    "type": "string"
+                                },
+                                "ProfileRevision": {
+                                    "type": "string"
+                                },
+                                "ProfileName": {
+                                    "type": "string"
+                                },
+                                "ProfileSource": {
+                                    "type": "string"
+                                },
+                                "ProfileClassID": {
+                                    "type": "string"
+                                },
+                                "ISO15745Reference": {
+                                    "type": "object",
+                                    "properties": {
+                                        "ISO15745Part": {
+                                            "type": "string"
+                                        },
+                                        "ISO15745Edition": {
+                                            "type": "string"
+                                        },
+                                        "ProfileTechnology": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "ISO15745Part",
+                                        "ISO15745Edition",
+                                        "ProfileTechnology"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "ProfileIdentification",
+                                "ProfileRevision",
+                                "ProfileName",
+                                "ProfileSource",
+                                "ProfileClassID",
+                                "ISO15745Reference"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "DocumentInfo",
+                        "ProfileHeader"
+                    ]
+                }
+            },
+            "required": [
+                "IODevice"
+            ]
+        }
+    },
+    "required": [
+        "attributes"
+    ]
+}
