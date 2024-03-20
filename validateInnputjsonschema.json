@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "IODevice": {
+      "type": "object",
+      "properties": {
+        "DocumentInfo": {
+          "type": "object",
+          "properties": {
+            "_copyright": {
+              "type": "string"
+            },
+            "_releaseDate": {
+              "type": "string"
+            },
+            "_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "_copyright",
+            "_releaseDate",
+            "_version"
+          ]
+        }
+      },
+      "required": [
+        "DocumentInfo"
+      ]
+    }
+  },
+  "required": [
+    "IODevice"
+  ]
+}
