@@ -16,7 +16,7 @@
               "type": "string"
             },
             "_version": {
-              "type": "string"
+              "type": "number"
             }
           },
           "required": [
